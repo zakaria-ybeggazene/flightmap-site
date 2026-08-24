@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — FlightMap</title>
+<meta name="description" content="Ce que FlightMap enregistre, ce qu’il transmet, et ce qu’il ne collecte jamais.">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="/assets/flightmap-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/flightmap-icon-512.png">
+<link rel="canonical" href="https://flightmapapp.com/privacy/fr">
+<link rel="alternate" hreflang="en" href="https://flightmapapp.com/privacy">
+<link rel="alternate" hreflang="fr" href="https://flightmapapp.com/privacy/fr">
+<link rel="alternate" hreflang="ar" href="https://flightmapapp.com/privacy/ar">
+<link rel="alternate" hreflang="x-default" href="https://flightmapapp.com/privacy">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+        <path d="M 153.4,354.3 A 138,138 0 1 0 351.9,162.7" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round"/>
+        <circle cx="153.4" cy="354.3" r="24" fill="currentColor"/>
+        <circle cx="351.9" cy="162.7" r="24" fill="currentColor"/>
+        <g transform="translate(256,250) scale(1.08)">
+          <path fill="currentColor" d="M 0,-96 C 7,-96 12,-82 12,-62 L 12,-28 L 96,28 L 96,48 L 12,24 L 12,60 L 40,82 L 40,96 L 0,88 L -40,96 L -40,82 L -12,60 L -12,24 L -96,48 L -96,28 L -12,-28 L -12,-62 C -12,-82 -7,-96 0,-96 Z"/>
+        </g>
+      </svg>
+      <span>FlightMap</span>
+    </a>
+    <nav class="langs" aria-label="Langue">
+      <a href="/privacy" lang="en" hreflang="en">English</a>
+      <strong aria-current="page">Français</strong>
+      <a href="/privacy/ar" lang="ar" hreflang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h1>Politique de confidentialité</h1>
+<p class="updated">Dernière mise à jour le 24 août 2026 · S’applique à FlightMap pour Android et iOS</p>
+
+<div class="note">
+  <p><strong>Ce document est un projet soumis à relecture et ne constitue pas un conseil juridique.</strong> Il a été rédigé en auditant ce que l’application FlightMap fait réellement, et il est publié afin de pouvoir être confronté au comportement de l’application. Si vous constatez ici quelque chose qui ne correspond pas à l’application, c’est une erreur de ce document : merci de <a href="mailto:support@flightmapapp.com">nous le signaler</a>.</p>
+  <p>La <a href="/privacy">version anglaise</a> fait foi. Cette traduction est fournie pour votre confort de lecture et les trois langues sont maintenues à jour ensemble.</p>
+</div>
+
+<h2>En résumé</h2>
+
+<ul>
+  <li>FlightMap est un <strong>carnet de vol</strong>. Vous pouvez tout utiliser sans compte, et dans ce cas vos vols ne quittent jamais votre téléphone.</li>
+  <li><strong>FlightMap ne demande ni ne collecte jamais votre position.</strong> Aucune autorisation de localisation n’existe dans l’application, sur aucune des deux plateformes.</li>
+  <li>L’appareil photo sert à une seule chose : lire le code-barres d’une carte d’embarquement, <strong>sur votre appareil</strong>. Aucune photo n’est prise, enregistrée ni transmise.</li>
+  <li>Votre calendrier est <strong>uniquement lu</strong>, jamais modifié, et seulement si vous activez cette fonction.</li>
+  <li>Nous ne vendons pas vos données, nous ne les partageons avec aucun annonceur, et l’application ne contient aucune publicité.</li>
+</ul>
+
+<h2>Qui est responsable de vos données</h2>
+
+<p>FlightMap est conçu et exploité par <strong>Zakaria Ybeggazene</strong>, développeur indépendant, responsable du traitement au sens du Règlement général sur la protection des données (RGPD).</p>
+
+<p>Vous pouvez nous écrire à <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> pour toute question relative à cette politique, y compris pour exercer les droits décrits ci-dessous.</p>
+
+<h2>Utiliser FlightMap sans compte</h2>
+
+<p>La connexion est <strong>facultative</strong>. Il n’y a aucun mur d’authentification : vous pouvez installer FlightMap, enregistrer des vols, consulter votre carte, vos statistiques et vos badges sans jamais créer de compte.</p>
+
+<p>Si vous ne vous connectez pas, vos vols sont enregistrés <strong>uniquement dans une base de données sur votre propre appareil</strong>. Ils ne nous sont pas transmis et nous n’avons aucun moyen de les consulter. Ils sont inclus dans les sauvegardes de votre appareil si vous les avez activées, ce qui relève de votre relation avec Apple ou Google.</p>
+
+<p>Dans cet état, les seules informations qui quittent votre appareil sont celles décrites ci-dessous aux sections <a href="#lookups">recherches de vols et d’aéroports</a> et <a href="#analytics">mesure d’audience et rapports d’incident</a>.</p>
+
+<h2>Ce que FlightMap enregistre à propos d’un vol</h2>
+
+<p>Qu’il soit stocké localement ou synchronisé avec votre compte, un enregistrement de vol peut contenir :</p>
+
+<ul>
+  <li>le numéro de vol, le nom de la compagnie et son code IATA ;</li>
+  <li>les codes, villes et pays des aéroports de départ et d’arrivée, ainsi que leurs coordonnées ;</li>
+  <li>les heures de départ et d’arrivée, enregistrées comme instants absolus avec le fuseau horaire de chaque extrémité, et un indicateur précisant si une heure est une valeur relevée ou une estimation ;</li>
+  <li>la distance parcourue et une estimation d’empreinte carbone, toutes deux calculées sur votre appareil ;</li>
+  <li>le type d’appareil et son immatriculation ;</li>
+  <li>le numéro de siège et la classe de cabine ;</li>
+  <li>la <strong>référence de réservation (PNR)</strong>, lorsque vous la saisissez ou qu’elle est lue depuis le code-barres d’une carte d’embarquement ;</li>
+  <li>les notes libres que vous rédigez ;</li>
+  <li>la manière dont le vol a été ajouté — manuellement, par carte d’embarquement ou depuis votre calendrier — ainsi que les dates de création et de dernière modification.</li>
+</ul>
+
+<p>Vous choisissez ce que vous renseignez. Un vol ne nécessite que ses deux aéroports et une date.</p>
+
+<h2>Si vous créez un compte</h2>
+
+<p>Un compte permet à votre carnet de survivre à la perte de votre téléphone et d’apparaître sur un second appareil. Sa création relève de votre décision et peut intervenir à tout moment, ou jamais.</p>
+
+<p>Nous enregistrons votre <strong>adresse e-mail</strong> et, si vous vous connectez avec Google ou avec Apple, l’identifiant de compte et l’adresse e-mail transmis par ce fournisseur. Les mots de passe sont gérés par notre prestataire d’authentification : nous ne les voyons ni ne les stockons jamais. Si vous utilisez <em>Se connecter avec Apple</em> en choisissant de masquer votre adresse, nous ne recevons que l’adresse relais d’Apple.</p>
+
+<p>Une fois connecté, les enregistrements de vol décrits ci-dessus sont copiés vers une base de données hébergée par Supabase et maintenus en cohérence avec votre appareil. L’accès est contrôlé au niveau de la base par une sécurité au niveau des lignes : un compte connecté ne peut lire et écrire que ses propres enregistrements.</p>
+
+<h2>Les autorisations demandées, et leur raison d’être</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Autorisation</th><th>Plateforme</th><th>À quoi elle sert</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Appareil photo</td>
+      <td>Android, iOS</td>
+      <td>Lire le code-barres d’une carte d’embarquement. Rien d’autre dans l’application n’utilise l’appareil photo.</td>
+    </tr>
+    <tr>
+      <td>Calendrier</td>
+      <td>Android, iOS</td>
+      <td>Repérer des numéros de vol dans vos propres entrées de calendrier pour vous éviter de les saisir.</td>
+    </tr>
+    <tr>
+      <td>Internet</td>
+      <td>Android</td>
+      <td>Recherches de vols et d’aéroports, synchronisation du compte, cartes, achats.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Toutes sont facultatives. Refusez l’appareil photo et vous pourrez toujours saisir un vol à la main ; refusez le calendrier et toutes les autres fonctions continuent de fonctionner normalement.</p>
+
+<h3>À propos de l’autorisation de calendrier sur Android</h3>
+
+<p>Sur Android, FlightMap déclare à la fois <code>READ_CALENDAR</code> et <code>WRITE_CALENDAR</code>. <strong>L’application n’écrit, ne modifie ni ne supprime jamais rien dans votre calendrier.</strong> La bibliothèque de calendrier utilisée exige que les deux autorisations soient déclarées pour accorder ne serait-ce que l’accès en lecture. Nous préférons l’expliquer plutôt que de demander discrètement un pouvoir que nous n’utilisons pas.</p>
+
+<h2 id="camera">Lecture des cartes d’embarquement</h2>
+
+<p>Lorsque vous scannez une carte d’embarquement, l’appareil photo décode le code-barres <strong>entièrement sur votre appareil</strong>. Aucune image n’est capturée, enregistrée ni transmise, et l’aperçu de l’appareil photo n’est pas enregistré.</p>
+
+<p>Le code-barres d’une carte d’embarquement contient notamment le nom du passager, la référence de réservation, le siège, la cabine, le numéro de vol et les deux codes d’aéroport.</p>
+
+<ul>
+  <li><strong>Le nom du passager est écarté.</strong> FlightMap le lit dans le cadre du décodage du format, puis n’en fait rien : il n’est jamais affiché, jamais enregistré, jamais transmis.</li>
+  <li>La <strong>référence de réservation et le numéro de siège sont enregistrés</strong> dans la fiche du vol, car ils sont utiles dans un carnet de vol. Ils sont donc également synchronisés si vous avez un compte. Vous pouvez effacer l’un ou l’autre en modifiant le vol.</li>
+</ul>
+
+<h2 id="calendar">Analyse du calendrier</h2>
+
+<p>Si vous l’activez, FlightMap parcourt les entrées de calendrier de votre appareil sur une fenêtre de dates et lit le <strong>titre, la description, le lieu et l’horaire</strong> de chaque entrée afin d’y repérer ce qui ressemble à un numéro de vol.</p>
+
+<p>Cette recherche a lieu <strong>sur votre appareil</strong>. Le contenu de votre calendrier n’est pas transmis, et les entrées qui ne ressemblent pas à un vol sont simplement ignorées et non conservées.</p>
+
+<p>La vérification s’exécute au premier plan, une seule fois, peu après l’ouverture de l’application : ce n’est pas un service en arrière-plan et elle n’ajoute jamais un vol d’elle-même. Lorsque vous demandez à FlightMap de confirmer une proposition qu’il a trouvée, le <strong>numéro de vol et la date</strong> de cette entrée sont transmis à notre fournisseur de données aériennes, exactement comme décrit ci-dessous.</p>
+
+<h2 id="lookups">Recherches de vols et d’aéroports</h2>
+
+<p>Lorsque vous recherchez un numéro de vol, un aéroport ou une compagnie, ou que vous confirmez un vol repéré dans votre calendrier ou sur une carte d’embarquement, l’application transmet le <strong>terme recherché</strong> — un numéro de vol et une date, un code d’aéroport, ou le texte que vous avez saisi — à <strong>AeroDataBox</strong>, un service tiers de données aériennes accessible via RapidAPI.</p>
+
+<p>Ces requêtes ne comportent <strong>aucun identifiant de compte, aucune adresse e-mail et aucun identifiant d’appareil</strong>. Elles ne sont pas rattachées à vous par nos soins. Comme pour toute requête Internet, le fournisseur voit l’adresse IP d’origine. Les résultats sont mis en cache sur votre appareil afin qu’une même recherche ne soit pas répétée.</p>
+
+<p>Si vous n’utilisez jamais de recherche et saisissez vos vols à la main, aucune information de vol n’est transmise à ce fournisseur.</p>
+
+<h2 id="analytics">Mesure d’audience et rapports d’incident</h2>
+
+<p>FlightMap utilise <strong>Google Firebase Crashlytics</strong> pour les rapports d’incident et <strong>Google Analytics pour Firebase</strong> pour une mesure d’usage élémentaire. Les deux sont entièrement désactivés dans les versions de développement et ne fonctionnent que dans l’application publiée.</p>
+
+<p>Ce que cela <em>n’</em>inclut <em>pas</em> importe autant que ce que cela inclut :</p>
+
+<ul>
+  <li><strong>Aucun identifiant d’utilisateur n’est jamais associé.</strong> L’application ne définit jamais d’identifiant utilisateur sur l’un ou l’autre service.</li>
+  <li><strong>Aucun événement personnalisé n’est enregistré.</strong> L’application ne consigne pas un seul événement de son cru : aucun vol, aéroport, trajet, adresse e-mail ni référence de réservation n’est jamais transmis à ces services.</li>
+  <li>Un rapport d’incident se compose d’une trace d’exécution et de l’état technique de l’application, du modèle de l’appareil et de la version du système.</li>
+  <li>La mesure d’audience reçoit les relevés collectés automatiquement par Google — ouvertures de l’application, durée des sessions, pays approximatif déduit de l’adresse IP, modèle d’appareil et système d’exploitation — ainsi qu’un <strong>identifiant publicitaire ou d’instance d’application, propre à l’appareil et généré par Google</strong>.</li>
+</ul>
+
+<h2 id="fonts">Polices de caractères</h2>
+
+<p>La police de l’application, Inter, est <strong>téléchargée depuis les serveurs de polices de Google au premier lancement</strong>, puis mise en cache sur votre appareil. Google reçoit donc votre adresse IP à ce premier lancement. Nous tenons à le dire clairement : c’est un transfert réel, il est facile de le manquer, et il se produit avant même que vous n’ayez fait quoi que ce soit dans l’application.</p>
+
+<h2>Cartes et achats</h2>
+
+<p><strong>Google Maps</strong> affiche la carte en 2D. Afficher une carte implique de demander des données cartographiques à Google, ce qui révèle nécessairement la région du monde que vous consultez ainsi que votre adresse IP. FlightMap ne centre jamais la carte que sur <em>les aéroports de votre carnet</em>, jamais sur vous : l’application ignore où vous êtes.</p>
+
+<p><strong>RevenueCat</strong> gère l’abonnement FlightMap Pro et le déblocage à achat unique, en enregistrant l’état des achats et des droits associés. Si vous êtes connecté, votre identifiant de compte est transmis à RevenueCat afin qu’un achat vous suive sur un nouvel appareil ; sinon, un identifiant anonyme est utilisé. Le paiement lui-même est entièrement traité par <strong>Apple</strong> ou <strong>Google</strong> : <strong>nous ne voyons jamais vos données bancaires</strong>, et aucune information de paiement ne nous parvient, ni à RevenueCat.</p>
+
+<h2>Tous les destinataires de vos données</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Service</th><th>Ce qu’il reçoit</th><th>Quand</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Adresse e-mail, identifiant de compte, vos enregistrements de vol</td><td>Uniquement si vous créez un compte</td></tr>
+    <tr><td>AeroDataBox (via RapidAPI)</td><td>Un numéro de vol et une date, un code d’aéroport, ou un terme saisi. Aucun identifiant.</td><td>Uniquement lors d’une recherche</td></tr>
+    <tr><td>Google Firebase (Crashlytics, Analytics)</td><td>Diagnostics d’incident ; mesure d’usage automatique avec un identifiant d’appareil généré par Google</td><td>Dans l’application publiée</td></tr>
+    <tr><td>Google Maps</td><td>Région cartographique demandée, adresse IP</td><td>À l’ouverture de la carte</td></tr>
+    <tr><td>Google Fonts</td><td>Adresse IP</td><td>Au premier lancement, pour récupérer la police</td></tr>
+    <tr><td>RevenueCat</td><td>État des achats et des droits, votre identifiant de compte ou un identifiant anonyme</td><td>À l’ouverture de l’écran d’achat ou lors d’un achat</td></tr>
+    <tr><td>Apple / Google</td><td>Traitement du paiement et de l’abonnement</td><td>Lors d’un achat</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Nous ne vendons aucune donnée personnelle, nous ne la partageons à des fins publicitaires, et FlightMap ne contient aucune publicité.</p>
+
+<h2>Sur quelles bases légales (RGPD)</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Traitement</th><th>Base légale</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Stocker et synchroniser vos vols lorsque vous avez un compte</td><td>Exécution du contrat — c’est le service que vous avez demandé</td></tr>
+    <tr><td>Votre compte et votre adresse e-mail</td><td>Exécution du contrat</td></tr>
+    <tr><td>Accéder à votre appareil photo ou à votre calendrier</td><td>Consentement — l’invite d’autorisation du système, révocable à tout moment dans les réglages</td></tr>
+    <tr><td>Recherches de vols et d’aéroports</td><td>Exécution du contrat, à votre demande</td></tr>
+    <tr><td>Rapports d’incident</td><td>Intérêt légitime — empêcher l’application de planter</td></tr>
+    <tr><td>Mesure d’audience</td><td>Intérêt légitime — comprendre si les fonctions sont utilisées</td></tr>
+    <tr><td>Abonnement et droits associés</td><td>Exécution du contrat</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Durées de conservation</h2>
+
+<ul>
+  <li>Les <strong>vols sur votre appareil</strong> sont conservés jusqu’à ce que vous les supprimiez ou désinstalliez l’application.</li>
+  <li>Les <strong>vols dans votre compte</strong> sont conservés jusqu’à ce que vous les supprimiez ou demandiez la suppression du compte. Supprimer un vol le marque immédiatement comme supprimé sur tous les appareils, puis l’enregistrement est effacé.</li>
+  <li>Les <strong>résultats de recherche mis en cache</strong> résident sur votre appareil et expirent d’eux-mêmes.</li>
+  <li>Les <strong>données d’incident et de mesure d’audience</strong> sont conservées pendant la durée définie dans Firebase, actuellement la valeur par défaut du service.</li>
+</ul>
+
+<h2>Où se trouvent vos données</h2>
+
+<p>Nos prestataires ont leur siège aux États-Unis et peuvent traiter des données en dehors de l’Espace économique européen. Le cas échéant, ces transferts reposent sur les <strong>clauses contractuelles types</strong> de la Commission européenne ou sur une garantie équivalente proposée par le prestataire concerné. Si vous utilisez FlightMap sans compte, aucune donnée de vol ne quitte votre appareil et il n’y a donc aucun transfert.</p>
+
+<h2>Enfants</h2>
+
+<p>FlightMap ne s’adresse pas aux enfants et nous ne collectons pas sciemment de données concernant une personne de moins de 16 ans. Si vous pensez qu’un enfant a créé un compte, écrivez-nous et nous le supprimerons.</p>
+
+<h2 id="deletion">Vos droits, et comment supprimer votre compte</h2>
+
+<p>Vous disposez d’un droit d’accès à vos données, de rectification, d’effacement, de limitation, d’opposition, de portabilité, et du droit de retirer votre consentement lorsque celui-ci constitue la base du traitement.</p>
+
+<p><strong>Pour supprimer votre compte et tout ce qu’il contient</strong>, écrivez à <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> depuis l’adresse utilisée à l’inscription, en demandant la suppression. Nous supprimerons votre compte et l’ensemble des enregistrements de vol qui y sont rattachés, et vous confirmerons l’opération. Nous nous engageons à agir sous 30 jours, et le faisons généralement bien plus vite.</p>
+
+<p>Il n’existe pas encore de bouton de suppression dans l’application ; il est prévu. En attendant, l’adresse ci-dessus est la voie à suivre, et nous y donnerons suite.</p>
+
+<p>Vous pouvez supprimer les données présentes sur votre appareil à tout moment sans nous contacter, en effaçant des vols dans l’application ou en la désinstallant. La désinstallation supprime les données locales mais ne supprime pas le compte.</p>
+
+<p>Toute demande relevant de cette section est gratuite. Vous avez également le droit d’introduire une réclamation auprès de votre autorité de contrôle locale — en France, la CNIL.</p>
+
+<h2>Modifications de cette politique</h2>
+
+<p>Si cette politique évolue de manière significative, nous modifierons la date en haut de page et vous en informerons dans l’application. La version anglaise de cette politique fait foi.</p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a></p>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/privacy/fr">Confidentialité</a>
+      <a href="/terms/fr">Conditions</a>
+      <a href="mailto:support@flightmapapp.com">Assistance</a>
+    </nav>
+    <p>© 2026 Zakaria Ybeggazene · Développé en toute transparence</p>
+  </div>
+</footer>
+
+</body>
+</html>

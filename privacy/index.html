@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — FlightMap</title>
+<meta name="description" content="What FlightMap stores, what it sends, and what it never collects.">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="/assets/flightmap-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/flightmap-icon-512.png">
+<link rel="canonical" href="https://flightmapapp.com/privacy">
+<link rel="alternate" hreflang="en" href="https://flightmapapp.com/privacy">
+<link rel="alternate" hreflang="fr" href="https://flightmapapp.com/privacy/fr">
+<link rel="alternate" hreflang="ar" href="https://flightmapapp.com/privacy/ar">
+<link rel="alternate" hreflang="x-default" href="https://flightmapapp.com/privacy">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+        <path d="M 153.4,354.3 A 138,138 0 1 0 351.9,162.7" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round"/>
+        <circle cx="153.4" cy="354.3" r="24" fill="currentColor"/>
+        <circle cx="351.9" cy="162.7" r="24" fill="currentColor"/>
+        <g transform="translate(256,250) scale(1.08)">
+          <path fill="currentColor" d="M 0,-96 C 7,-96 12,-82 12,-62 L 12,-28 L 96,28 L 96,48 L 12,24 L 12,60 L 40,82 L 40,96 L 0,88 L -40,96 L -40,82 L -12,60 L -12,24 L -96,48 L -96,28 L -12,-28 L -12,-62 C -12,-82 -7,-96 0,-96 Z"/>
+        </g>
+      </svg>
+      <span>FlightMap</span>
+    </a>
+    <nav class="langs" aria-label="Language">
+      <strong aria-current="page">English</strong>
+      <a href="/privacy/fr" lang="fr" hreflang="fr">Français</a>
+      <a href="/privacy/ar" lang="ar" hreflang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated 24 August 2026 · Applies to FlightMap for Android and iOS</p>
+
+<div class="note">
+  <p><strong>This is a draft pending review and is not legal advice.</strong> It was written by auditing what the FlightMap application actually does, and it is published so that it can be checked against the app's behaviour. If you find something here that does not match what the app does, that is a bug in this document — please <a href="mailto:support@flightmapapp.com">tell us</a>.</p>
+</div>
+
+<h2>The short version</h2>
+
+<ul>
+  <li>FlightMap is a <strong>logbook</strong>. You can use all of it without an account, and if you do, your flights never leave your phone.</li>
+  <li><strong>FlightMap never asks for or collects your location.</strong> There is no location permission in the app on either platform.</li>
+  <li>The camera is used for one thing: reading the barcode on a boarding pass, <strong>on your device</strong>. No photograph is taken, saved, or sent anywhere.</li>
+  <li>Your calendar is <strong>only ever read</strong>, never written to, and only when you turn that feature on.</li>
+  <li>We do not sell your data, we do not share it with advertisers, and there is no advertising in the app.</li>
+</ul>
+
+<h2>Who is responsible for your data</h2>
+
+<p>FlightMap is made and operated by <strong>Zakaria Ybeggazene</strong>, an individual developer, who is the data controller for the purposes of the UK and EU General Data Protection Regulation (GDPR).</p>
+
+<p>You can reach us at <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> for anything in this policy, including any request to exercise the rights described below.</p>
+
+<h2>Using FlightMap without an account</h2>
+
+<p>Signing in is <strong>optional</strong>. There is no sign-in wall: you can install FlightMap, log flights, view your map, statistics and badges, and never create an account.</p>
+
+<p>If you do not sign in, your flights are stored <strong>only in a database on your own device</strong>. They are not uploaded to us, and we have no way to see them. They are included in your device's own backups if you have those switched on, which is between you and Apple or Google.</p>
+
+<p>In that state the only information that leaves your device is described under <a href="#lookups">flight and airport lookups</a> and <a href="#analytics">analytics and crash reporting</a> below.</p>
+
+<h2>What FlightMap stores about a flight</h2>
+
+<p>Whether stored locally or synced to your account, a flight record can contain:</p>
+
+<ul>
+  <li>Flight number, airline name and airline IATA code</li>
+  <li>Departure and arrival airport codes, cities and countries, and the airports' coordinates</li>
+  <li>Departure and arrival times, stored as absolute instants together with the time zone at each end, and a marker recording whether a time is a recorded value or an estimate</li>
+  <li>Distance flown and an estimated carbon figure, both calculated on your device</li>
+  <li>Aircraft type and aircraft registration</li>
+  <li>Seat number and cabin class</li>
+  <li><strong>Booking reference (PNR)</strong>, when you enter one or when one is read from a boarding-pass barcode</li>
+  <li>Any free-text notes you write</li>
+  <li>How the flight was added — manually, from a boarding pass, or from your calendar — and when the record was created and last changed</li>
+</ul>
+
+<p>You choose how much of this to fill in. A flight needs only its two airports and a date.</p>
+
+<h2>If you create an account</h2>
+
+<p>An account exists so that your logbook survives losing your phone and can appear on a second device. Creating one is your decision and it can be done at any time, or never.</p>
+
+<p>We store your <strong>email address</strong> and, if you sign in with Google or with Apple, the account identifier and email address that provider gives us. Passwords are handled by our authentication provider and we never see or store them. If you use <em>Sign in with Apple</em> and choose to hide your email, we only ever receive Apple's relay address.</p>
+
+<p>Once you are signed in, the flight records described above are copied to a database hosted by Supabase and kept in step with your device. Access is enforced at the database with row-level security, so a signed-in account can read and write only its own rows.</p>
+
+<h2>Permissions the app asks for, and why</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Platform</th><th>What it is for</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Camera</td>
+      <td>Android, iOS</td>
+      <td>Reading a boarding-pass barcode. Nothing else in the app uses the camera.</td>
+    </tr>
+    <tr>
+      <td>Calendar</td>
+      <td>Android, iOS</td>
+      <td>Finding flight numbers in your own calendar entries so you do not have to type them.</td>
+    </tr>
+    <tr>
+      <td>Internet</td>
+      <td>Android</td>
+      <td>Flight and airport lookups, account sync, maps, purchases.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>All of these are optional. Decline the camera and you can still type a flight in by hand; decline the calendar and every other feature works normally.</p>
+
+<h3>A note on the Android calendar permission</h3>
+
+<p>On Android, FlightMap declares both <code>READ_CALENDAR</code> and <code>WRITE_CALENDAR</code>. <strong>The app never writes to, changes or deletes anything in your calendar.</strong> The calendar library the app uses requires both permissions to be declared in order to grant read access at all. We would rather explain this than quietly ask for a power we do not use.</p>
+
+<h2 id="camera">Boarding-pass scanning</h2>
+
+<p>When you scan a boarding pass, the camera decodes the barcode <strong>entirely on your device</strong>. No image is captured, stored, or transmitted, and the camera preview is not recorded.</p>
+
+<p>A boarding-pass barcode contains, among other things, the passenger name, the booking reference, the seat, the cabin, the flight designator and the two airport codes.</p>
+
+<ul>
+  <li><strong>The passenger name is discarded.</strong> FlightMap reads it as part of decoding the barcode format and then does nothing with it: it is never displayed, never saved, and never sent anywhere.</li>
+  <li>The <strong>booking reference and seat number are saved</strong> to the flight record, because they are useful in a logbook. They are therefore also synced if you have an account. You can clear either of them by editing the flight.</li>
+</ul>
+
+<h2 id="calendar">Calendar scanning</h2>
+
+<p>If you enable it, FlightMap looks through the calendar entries on your device within a date window and reads each entry's <strong>title, description, location and time</strong> to spot things that look like flight numbers.</p>
+
+<p>This search happens <strong>on your device</strong>. The contents of your calendar are not uploaded, and calendar entries that do not look like a flight are simply ignored and not retained.</p>
+
+<p>The check runs in the foreground, once, shortly after you open the app — it is not a background service and it never adds a flight on its own. When you ask FlightMap to confirm a candidate it has found, the <strong>flight number and date</strong> from that entry are sent to our flight-data provider, exactly as described next.</p>
+
+<h2 id="lookups">Flight and airport lookups</h2>
+
+<p>When you look up a flight number, search for an airport or an airline, or confirm a flight FlightMap found in your calendar or on a boarding pass, the app sends the <strong>search term</strong> — a flight number and date, an airport code, or the text you typed — to <strong>AeroDataBox</strong>, a third-party aviation data service reached through RapidAPI.</p>
+
+<p>These requests carry <strong>no account identifier, no email address and no device identifier</strong>. They are not linked to you by us. As with any internet request, the provider will see the originating IP address. Results are cached on your device so that the same lookup is not repeated.</p>
+
+<p>If you never use a lookup — typing your flights in by hand instead — no flight information is sent to this provider at all.</p>
+
+<h2 id="analytics">Analytics and crash reporting</h2>
+
+<p>FlightMap uses <strong>Google Firebase Crashlytics</strong> for crash reports and <strong>Google Analytics for Firebase</strong> for basic usage measurement. Both are switched off entirely in development builds and only run in the released app.</p>
+
+<p>What this does <em>not</em> include is as important as what it does:</p>
+
+<ul>
+  <li><strong>No user identifier is ever attached.</strong> The app never sets a user ID on either service.</li>
+  <li><strong>No custom events are recorded.</strong> The app does not log a single event of its own — no flight, airport, route, email address or booking reference is ever sent to either service.</li>
+  <li>A crash report is a stack trace and the technical state of the app, plus the device model and operating system version.</li>
+  <li>Analytics receives Google's own automatically collected measurements — app opens, session length, approximate country derived from the IP address, device model and operating system — together with a <strong>device-scoped advertising or app-instance identifier generated by Google</strong>.</li>
+</ul>
+
+<h2 id="fonts">Fonts</h2>
+
+<p>The app's typeface, Inter, is <strong>downloaded from Google's font servers the first time the app runs</strong> and then cached on your device. This means Google receives your IP address on that first launch. We consider this worth stating plainly because it is a real transfer, it is easy to miss, and it happens before you have done anything in the app.</p>
+
+<h2>Maps and purchases</h2>
+
+<p><strong>Google Maps</strong> renders the 2D map. Displaying a map involves requesting map data from Google, which necessarily reveals which part of the world you are looking at and your IP address. FlightMap only ever centres the map on <em>the airports in your logbook</em>, never on you — the app does not know where you are.</p>
+
+<p><strong>RevenueCat</strong> manages the FlightMap Pro subscription and one-time unlock, recording purchase and entitlement state. If you are signed in, your account identifier is passed to RevenueCat so that a purchase follows your account to a new device; if you are not signed in, an anonymous identifier is used instead. Payment itself is handled entirely by <strong>Apple</strong> or <strong>Google</strong> — <strong>we never see your card details</strong>, and no payment information reaches us or RevenueCat.</p>
+
+<h2>Everyone we share data with</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>Service</th><th>What it receives</th><th>When</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Email address, account identifier, your flight records</td><td>Only if you create an account</td></tr>
+    <tr><td>AeroDataBox (via RapidAPI)</td><td>A flight number and date, an airport code, or a typed search term. No identifier.</td><td>Only when you look something up</td></tr>
+    <tr><td>Google Firebase (Crashlytics, Analytics)</td><td>Crash diagnostics; automatic usage measurement with a Google-generated device identifier</td><td>In the released app</td></tr>
+    <tr><td>Google Maps</td><td>Map region requested, IP address</td><td>When you open the map</td></tr>
+    <tr><td>Google Fonts</td><td>IP address</td><td>First launch, to fetch the typeface</td></tr>
+    <tr><td>RevenueCat</td><td>Purchase and entitlement state, your account identifier or an anonymous one</td><td>If you open the paywall or purchase</td></tr>
+    <tr><td>Apple / Google</td><td>Payment and subscription handling</td><td>If you purchase</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>We do not sell personal data, we do not share it for advertising, and FlightMap contains no advertising.</p>
+
+<h2>Why we are allowed to process this (GDPR legal bases)</h2>
+
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr><th>What</th><th>Basis</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Storing and syncing your flights when you have an account</td><td>Performance of a contract — this is the service you asked for</td></tr>
+    <tr><td>Your account and email address</td><td>Performance of a contract</td></tr>
+    <tr><td>Reading your camera or calendar</td><td>Consent — the device permission prompt, which you can withdraw in system settings at any time</td></tr>
+    <tr><td>Flight and airport lookups</td><td>Performance of a contract, at your request</td></tr>
+    <tr><td>Crash reporting</td><td>Legitimate interests — keeping the app from crashing</td></tr>
+    <tr><td>Analytics</td><td>Legitimate interests — understanding whether features are used</td></tr>
+    <tr><td>Subscription and entitlement</td><td>Performance of a contract</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>How long we keep it</h2>
+
+<ul>
+  <li><strong>Flights on your device</strong> stay until you delete them or uninstall the app.</li>
+  <li><strong>Flights in your account</strong> stay until you delete them or ask us to delete the account. Deleting a flight marks it deleted immediately on every device; the row is then removed.</li>
+  <li><strong>Cached lookup results</strong> live on your device and expire on their own.</li>
+  <li><strong>Crash and analytics data</strong> are kept for the retention period set in Firebase, currently the service default.</li>
+</ul>
+
+<h2>Where your data is</h2>
+
+<p>Our providers are US-headquartered and may process data outside the European Economic Area. Where that happens, transfers rely on the European Commission's <strong>Standard Contractual Clauses</strong> or an equivalent safeguard offered by that provider. If you use FlightMap without an account, no flight data leaves your device to be transferred anywhere.</p>
+
+<h2>Children</h2>
+
+<p>FlightMap is not directed at children and we do not knowingly collect data from anyone under 16. If you believe a child has created an account, write to us and we will delete it.</p>
+
+<h2 id="deletion">Your rights, and how to delete your account</h2>
+
+<p>If you are in the UK or the EEA, you have the right to access your data, to correct it, to have it erased, to restrict or object to processing, to data portability, and to withdraw consent where consent is the basis.</p>
+
+<p><strong>To delete your account and everything in it</strong>, email <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> from the address you signed up with, asking for deletion. We will delete your account and all flight records held against it, and confirm when it is done. We aim to act within 30 days and usually much sooner.</p>
+
+<p>There is no in-app delete button yet; it is planned. Until it exists, the email above is the route, and it is the one we will honour.</p>
+
+<p>You can remove the data on your device at any time without contacting us, by deleting flights in the app or uninstalling it. Uninstalling removes local data but does not by itself delete an account.</p>
+
+<p>Any request under this section is free. You also have the right to complain to your local data protection supervisory authority.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy changes in a way that matters, we will change the date at the top and, for a significant change, say so in the app. The English version of this policy is the authoritative one.</p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a></p>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:support@flightmapapp.com">Support</a>
+    </nav>
+    <p>© 2026 Zakaria Ybeggazene · Made in the open</p>
+  </div>
+</footer>
+
+</body>
+</html>
