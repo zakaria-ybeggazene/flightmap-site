@@ -1,9 +1,9 @@
 /* FlightMap public pages.
  *
- * No webfont is requested. The policy these pages carry discloses that the app
- * fetches Inter from Google at runtime; serving the pages themselves from a
- * font CDN would hand a third party the IP address of everyone who came here to
- * read about that. System stack only, on purpose.
+ * No webfont is requested. The app bundles Inter precisely so that launching it
+ * sends nothing to Google; serving these pages from a font CDN would hand a
+ * third party the IP address of everyone who came here to read that claim.
+ * System stack only, on purpose.
  */
 
 :root {
