@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — FlightMap</title>
+<title>Privacy Policy · FlightMap</title>
 <meta name="description" content="What FlightMap stores, what it sends, and what it never collects.">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/assets/flightmap-icon.svg" type="image/svg+xml">
@@ -43,7 +43,7 @@
 <p class="updated">Last updated 24 August 2026 · Applies to FlightMap for Android and iOS</p>
 
 <div class="note">
-  <p><strong>This is a draft pending review and is not legal advice.</strong> It was written by auditing what the FlightMap application actually does, and it is published so that it can be checked against the app's behaviour. If you find something here that does not match what the app does, that is a bug in this document — please <a href="mailto:support@flightmapapp.com">tell us</a>.</p>
+  <p><strong>This is a draft pending review and is not legal advice.</strong> It was written by auditing what the FlightMap application actually does, and it is published so that it can be checked against the app's behaviour. If you find something here that does not match what the app does, that is a bug in this document. Please <a href="mailto:support@flightmapapp.com">tell us</a>.</p>
 </div>
 
 <h2>The short version</h2>
@@ -84,7 +84,7 @@
   <li>Seat number and cabin class</li>
   <li><strong>Booking reference (PNR)</strong>, when you enter one or when one is read from a boarding-pass barcode</li>
   <li>Any free-text notes you write</li>
-  <li>How the flight was added — manually, from a boarding pass, or from your calendar — and when the record was created and last changed</li>
+  <li>How the flight was added (manually, from a boarding pass, or from your calendar), and when the record was created and last changed</li>
 </ul>
 
 <p>You choose how much of this to fill in. A flight needs only its two airports and a date.</p>
@@ -147,27 +147,27 @@
 
 <p>This search happens <strong>on your device</strong>. The contents of your calendar are not uploaded, and calendar entries that do not look like a flight are simply ignored and not retained.</p>
 
-<p>The check runs in the foreground, once, shortly after you open the app — it is not a background service and it never adds a flight on its own. When you ask FlightMap to confirm a candidate it has found, the <strong>flight number and date</strong> from that entry are sent to our flight-data provider, exactly as described next.</p>
+<p>The check runs in the foreground, once, shortly after you open the app. It is not a background service and it never adds a flight on its own. When you ask FlightMap to confirm a candidate it has found, the <strong>flight number and date</strong> from that entry are sent to our flight-data provider, exactly as described next.</p>
 
 <h2 id="lookups">Flight and airport lookups</h2>
 
-<p>When you look up a flight number, search for an airport or an airline, or confirm a flight FlightMap found in your calendar or on a boarding pass, the app sends the <strong>search term</strong> — a flight number and date, an airport code, or the text you typed — to <strong>AeroDataBox</strong>, a third-party aviation data service reached through RapidAPI.</p>
+<p>When you look up a flight number, search for an airport or an airline, or confirm a flight FlightMap found in your calendar or on a boarding pass, the app sends the <strong>search term</strong>: a flight number and date, an airport code, or the text you typed. That goes to <strong>AeroDataBox</strong>, a third-party aviation data service reached through RapidAPI.</p>
 
 <p>These requests carry <strong>no account identifier, no email address and no device identifier</strong>. They are not linked to you by us. As with any internet request, the provider will see the originating IP address. Results are cached on your device so that the same lookup is not repeated.</p>
 
-<p>If you never use a lookup — typing your flights in by hand instead — no flight information is sent to this provider at all.</p>
+<p>If you never use a lookup, typing your flights in by hand instead, no flight information is sent to this provider at all.</p>
 
 <h2 id="analytics">Analytics and crash reporting</h2>
 
 <p>FlightMap uses <strong>Google Firebase Crashlytics</strong> to find out when the app has crashed. It is switched off entirely in development builds.</p>
 
-<p><strong>Usage analytics are currently switched off.</strong> Measuring how an app is used means writing an identifier onto your device, and under the ePrivacy rules that needs your permission first — not merely a good reason. We have not built the screen that asks you, so rather than collect it on a technicality, we collect nothing. If that changes, you will be asked, the answer will default to no, and you will be able to change it in Settings at any time.</p>
+<p><strong>Usage analytics are currently switched off.</strong> Measuring how an app is used means writing an identifier onto your device, and under the ePrivacy rules that needs your permission first, not merely a good reason. We have not built the screen that asks you, so rather than collect it on a technicality, we collect nothing. If that changes, you will be asked, the answer will default to no, and you will be able to change it in Settings at any time.</p>
 
 <p>What crash reporting does <em>not</em> include is as important as what it does:</p>
 
 <ul>
   <li><strong>No user identifier is ever attached.</strong> The app never sets a user ID on the crash reporter.</li>
-  <li><strong>No custom events are recorded.</strong> The app does not log a single event of its own — no flight, airport, route, email address or booking reference is ever sent.</li>
+  <li><strong>No custom events are recorded.</strong> The app does not log a single event of its own: no flight, airport, route, email address or booking reference is ever sent.</li>
   <li>A crash report is a stack trace and the technical state of the app, plus the device model and operating system version.</li>
   <li>There is <strong>no advertising identifier</strong>, and nothing in FlightMap tracks you across other apps or websites.</li>
 </ul>
@@ -182,9 +182,9 @@
 
 <h2>Maps and purchases</h2>
 
-<p><strong>Google Maps</strong> renders the 2D map. Displaying a map involves requesting map data from Google, which necessarily reveals which part of the world you are looking at and your IP address. FlightMap only ever centres the map on <em>the airports in your logbook</em>, never on you — the app does not know where you are.</p>
+<p><strong>Google Maps</strong> renders the 2D map. Displaying a map involves requesting map data from Google, which necessarily reveals which part of the world you are looking at and your IP address. FlightMap only ever centres the map on <em>the airports in your logbook</em>, never on you. The app does not know where you are.</p>
 
-<p><strong>RevenueCat</strong> manages the FlightMap Pro subscription and one-time unlock, recording purchase and entitlement state. If you are signed in, your account identifier is passed to RevenueCat so that a purchase follows your account to a new device; if you are not signed in, an anonymous identifier is used instead. Payment itself is handled entirely by <strong>Apple</strong> or <strong>Google</strong> — <strong>we never see your card details</strong>, and no payment information reaches us or RevenueCat.</p>
+<p><strong>RevenueCat</strong> manages the FlightMap Pro subscription and one-time unlock, recording purchase and entitlement state. If you are signed in, your account identifier is passed to RevenueCat so that a purchase follows your account to a new device; if you are not signed in, an anonymous identifier is used instead. Payment itself is handled entirely by <strong>Apple</strong> or <strong>Google</strong>. <strong>We never see your card details</strong>, and no payment information reaches us or RevenueCat.</p>
 
 <h2>Everyone we share data with</h2>
 
@@ -196,7 +196,7 @@
   <tbody>
     <tr><td>Supabase</td><td>Email address, account identifier, your flight records</td><td>Only if you create an account</td></tr>
     <tr><td>AeroDataBox (via RapidAPI)</td><td>A flight number and date, an airport code, or a typed search term. No identifier.</td><td>Only when you look something up</td></tr>
-    <tr><td>Google Firebase (Crashlytics)</td><td>Crash diagnostics — a stack trace, device model and OS version</td><td>In the released app, when it crashes</td></tr>
+    <tr><td>Google Firebase (Crashlytics)</td><td>Crash diagnostics: a stack trace, device model and OS version</td><td>In the released app, when it crashes</td></tr>
     <tr><td>Google Maps</td><td>Map region requested, IP address</td><td>When you open the map</td></tr>
     <tr><td>RevenueCat</td><td>Purchase and entitlement state, your account identifier or an anonymous one</td><td>If you open the paywall or purchase</td></tr>
     <tr><td>Apple / Google</td><td>Payment and subscription handling</td><td>If you purchase</td></tr>
@@ -214,12 +214,12 @@
     <tr><th>What</th><th>Basis</th></tr>
   </thead>
   <tbody>
-    <tr><td>Storing and syncing your flights when you have an account</td><td>Performance of a contract — this is the service you asked for</td></tr>
+    <tr><td>Storing and syncing your flights when you have an account</td><td>Performance of a contract: this is the service you asked for</td></tr>
     <tr><td>Your account and email address</td><td>Performance of a contract</td></tr>
-    <tr><td>Reading your camera or calendar</td><td>Consent — the device permission prompt, which you can withdraw in system settings at any time</td></tr>
+    <tr><td>Reading your camera or calendar</td><td>Consent: the device permission prompt, which you can withdraw in system settings at any time</td></tr>
     <tr><td>Flight and airport lookups</td><td>Performance of a contract, at your request</td></tr>
-    <tr><td>Crash reporting</td><td>Legitimate interests — keeping the app working for you</td></tr>
-    <tr><td>Usage analytics</td><td><strong>Consent — and until we can ask for it properly, this is switched off</strong></td></tr>
+    <tr><td>Crash reporting</td><td>Legitimate interests: keeping the app working for you</td></tr>
+    <tr><td>Usage analytics</td><td><strong>Consent, and until we can ask for it properly, this is switched off</strong></td></tr>
     <tr><td>Subscription and entitlement</td><td>Performance of a contract</td></tr>
   </tbody>
 </table>

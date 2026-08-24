@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politique de confidentialité — FlightMap</title>
+<title>Politique de confidentialité · FlightMap</title>
 <meta name="description" content="Ce que FlightMap enregistre, ce qu’il transmet, et ce qu’il ne collecte jamais.">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/assets/flightmap-icon.svg" type="image/svg+xml">
@@ -85,7 +85,7 @@
   <li>le numéro de siège et la classe de cabine ;</li>
   <li>la <strong>référence de réservation (PNR)</strong>, lorsque vous la saisissez ou qu’elle est lue depuis le code-barres d’une carte d’embarquement ;</li>
   <li>les notes libres que vous rédigez ;</li>
-  <li>la manière dont le vol a été ajouté — manuellement, par carte d’embarquement ou depuis votre calendrier — ainsi que les dates de création et de dernière modification.</li>
+  <li>la manière dont le vol a été ajouté (manuellement, par carte d’embarquement ou depuis votre calendrier), ainsi que les dates de création et de dernière modification.</li>
 </ul>
 
 <p>Vous choisissez ce que vous renseignez. Un vol ne nécessite que ses deux aéroports et une date.</p>
@@ -152,7 +152,7 @@
 
 <h2 id="lookups">Recherches de vols et d’aéroports</h2>
 
-<p>Lorsque vous recherchez un numéro de vol, un aéroport ou une compagnie, ou que vous confirmez un vol repéré dans votre calendrier ou sur une carte d’embarquement, l’application transmet le <strong>terme recherché</strong> — un numéro de vol et une date, un code d’aéroport, ou le texte que vous avez saisi — à <strong>AeroDataBox</strong>, un service tiers de données aériennes accessible via RapidAPI.</p>
+<p>Lorsque vous recherchez un numéro de vol, un aéroport ou une compagnie, ou que vous confirmez un vol repéré dans votre calendrier ou sur une carte d’embarquement, l’application transmet le <strong>terme recherché</strong> : un numéro de vol et une date, un code d’aéroport, ou le texte que vous avez saisi. Ce terme est transmis à <strong>AeroDataBox</strong>, un service tiers de données aériennes accessible via RapidAPI.</p>
 
 <p>Ces requêtes ne comportent <strong>aucun identifiant de compte, aucune adresse e-mail et aucun identifiant d’appareil</strong>. Elles ne sont pas rattachées à vous par nos soins. Comme pour toute requête Internet, le fournisseur voit l’adresse IP d’origine. Les résultats sont mis en cache sur votre appareil afin qu’une même recherche ne soit pas répétée.</p>
 
@@ -162,7 +162,7 @@
 
 <p>FlightMap utilise <strong>Google Firebase Crashlytics</strong> pour savoir quand l’application a planté. Ce service est entièrement désactivé dans les versions de développement.</p>
 
-<p><strong>La mesure d’audience est actuellement désactivée.</strong> Mesurer l’usage d’une application suppose d’inscrire un identifiant sur votre appareil, et la réglementation ePrivacy exige pour cela votre autorisation préalable — et non simplement un bon motif. Nous n’avons pas encore conçu l’écran qui vous la demande ; plutôt que de collecter par commodité juridique, nous ne collectons rien. Si cela change, la question vous sera posée, la réponse par défaut sera non, et vous pourrez en changer à tout moment dans les paramètres.</p>
+<p><strong>La mesure d’audience est actuellement désactivée.</strong> Mesurer l’usage d’une application suppose d’inscrire un identifiant sur votre appareil, et la réglementation ePrivacy exige pour cela votre autorisation préalable, et non simplement un bon motif. Nous n’avons pas encore conçu l’écran qui vous la demande ; plutôt que de collecter par commodité juridique, nous ne collectons rien. Si cela change, la question vous sera posée, la réponse par défaut sera non, et vous pourrez en changer à tout moment dans les paramètres.</p>
 
 <p>Ce que les rapports d’incident <em>n’</em>incluent <em>pas</em> importe autant que ce qu’ils incluent :</p>
 
@@ -197,7 +197,7 @@
   <tbody>
     <tr><td>Supabase</td><td>Adresse e-mail, identifiant de compte, vos enregistrements de vol</td><td>Uniquement si vous créez un compte</td></tr>
     <tr><td>AeroDataBox (via RapidAPI)</td><td>Un numéro de vol et une date, un code d’aéroport, ou un terme saisi. Aucun identifiant.</td><td>Uniquement lors d’une recherche</td></tr>
-    <tr><td>Google Firebase (Crashlytics)</td><td>Diagnostics d’incident — trace d’exécution, modèle d’appareil et version du système</td><td>Dans l’application publiée, en cas de plantage</td></tr>
+    <tr><td>Google Firebase (Crashlytics)</td><td>Diagnostics d’incident : trace d’exécution, modèle d’appareil et version du système</td><td>Dans l’application publiée, en cas de plantage</td></tr>
     <tr><td>Google Maps</td><td>Région cartographique demandée, adresse IP</td><td>À l’ouverture de la carte</td></tr>
     <tr><td>RevenueCat</td><td>État des achats et des droits, votre identifiant de compte ou un identifiant anonyme</td><td>À l’ouverture de l’écran d’achat ou lors d’un achat</td></tr>
     <tr><td>Apple / Google</td><td>Traitement du paiement et de l’abonnement</td><td>Lors d’un achat</td></tr>
@@ -215,12 +215,12 @@
     <tr><th>Traitement</th><th>Base légale</th></tr>
   </thead>
   <tbody>
-    <tr><td>Stocker et synchroniser vos vols lorsque vous avez un compte</td><td>Exécution du contrat — c’est le service que vous avez demandé</td></tr>
+    <tr><td>Stocker et synchroniser vos vols lorsque vous avez un compte</td><td>Exécution du contrat : c’est le service que vous avez demandé</td></tr>
     <tr><td>Votre compte et votre adresse e-mail</td><td>Exécution du contrat</td></tr>
-    <tr><td>Accéder à votre appareil photo ou à votre calendrier</td><td>Consentement — l’invite d’autorisation du système, révocable à tout moment dans les réglages</td></tr>
+    <tr><td>Accéder à votre appareil photo ou à votre calendrier</td><td>Consentement : l’invite d’autorisation du système, révocable à tout moment dans les réglages</td></tr>
     <tr><td>Recherches de vols et d’aéroports</td><td>Exécution du contrat, à votre demande</td></tr>
-    <tr><td>Rapports d’incident</td><td>Intérêt légitime — maintenir l’application en état de fonctionner</td></tr>
-    <tr><td>Mesure d’audience</td><td><strong>Consentement — et tant que nous ne pouvons pas le recueillir correctement, elle est désactivée</strong></td></tr>
+    <tr><td>Rapports d’incident</td><td>Intérêt légitime : maintenir l’application en état de fonctionner</td></tr>
+    <tr><td>Mesure d’audience</td><td><strong>Consentement, et tant que nous ne pouvons pas le recueillir correctement, elle est désactivée</strong></td></tr>
     <tr><td>Abonnement et droits associés</td><td>Exécution du contrat</td></tr>
   </tbody>
 </table>
@@ -253,7 +253,7 @@
 
 <p>Vous pouvez supprimer les données présentes sur votre appareil à tout moment sans nous contacter, en effaçant des vols dans l’application ou en la désinstallant. La désinstallation supprime les données locales mais ne supprime pas le compte.</p>
 
-<p>Toute demande relevant de cette section est gratuite. Vous avez également le droit d’introduire une réclamation auprès de votre autorité de contrôle locale — en France, la CNIL.</p>
+<p>Toute demande relevant de cette section est gratuite. Vous avez également le droit d’introduire une réclamation auprès de votre autorité de contrôle locale, en France la CNIL.</p>
 
 <h2>Modifications de cette politique</h2>
 
