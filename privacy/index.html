@@ -40,7 +40,7 @@
 <main class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated 24 August 2026 · Applies to FlightMap for Android and iOS</p>
+<p class="updated">Last updated 25 August 2026 · Applies to FlightMap for Android and iOS</p>
 
 <div class="note">
   <p><strong>This policy describes what the FlightMap app actually does.</strong> It was written by auditing the code, not adapted from a template, so every claim in it is meant to be checkable against the app itself. If anything here does not match how the app behaves, that is a bug in this document: please <a href="mailto:support@flightmapapp.com">tell us</a> and we will correct it.</p>
@@ -54,7 +54,7 @@
   <li>The camera is used for one thing: reading the barcode on a boarding pass, <strong>on your device</strong>. No photograph is taken, saved, or sent anywhere.</li>
   <li>Your calendar is <strong>only ever read</strong>, never written to, and only when you turn that feature on.</li>
   <li>We do not sell your data, we do not share it with advertisers, and there is no advertising in the app.</li>
-  <li><strong>Usage analytics are switched off</strong>, and the typeface ships inside the app, so launching FlightMap sends nothing to Google about you.</li>
+  <li><strong>Usage analytics are off unless you switch them on</strong>, and the typeface ships inside the app, so launching FlightMap sends nothing to Google about you.</li>
 </ul>
 
 <h2>Who is responsible for your data</h2>
@@ -161,7 +161,11 @@
 
 <p>FlightMap uses <strong>Google Firebase Crashlytics</strong> to find out when the app has crashed. It is switched off entirely in development builds.</p>
 
-<p><strong>Usage analytics are currently switched off.</strong> Measuring how an app is used means writing an identifier onto your device, and under the ePrivacy rules that needs your permission first, not merely a good reason. We have not built the screen that asks you, so rather than collect it on a technicality, we collect nothing. If that changes, you will be asked, the answer will default to no, and you will be able to change it in Settings at any time.</p>
+<p><strong>Usage analytics are off until you turn them on.</strong> Measuring how an app is used means writing an identifier onto your device, and under the ePrivacy rules that needs your permission first, not merely a good reason. So FlightMap asks. The question appears once, on the Settings screen, as a card you can answer either way; it never interrupts you and nothing in the app is withheld if you decline.</p>
+
+<p>Until you answer, <strong>nothing is collected</strong>. The app is built so that collection is switched off before it even starts, not turned off a moment after launching, so no identifier is written while the question is still open. If you decline, you will not be asked again. If you agree, you can withdraw at any time from the same switch in <strong>Settings &rsaquo; App &rsaquo; Usage analytics</strong>, and collection stops when you do.</p>
+
+<p>What this collects, if you allow it: Google's own automatic app events and a device-scoped identifier. What it never collects, allowed or not: <strong>your name, your email address, any flight, airport, route or booking reference</strong>. The app sets no user ID and logs no events of its own.</p>
 
 <p>What crash reporting does <em>not</em> include is as important as what it does:</p>
 
@@ -219,7 +223,7 @@
     <tr><td>Reading your camera or calendar</td><td>Consent: the device permission prompt, which you can withdraw in system settings at any time</td></tr>
     <tr><td>Flight and airport lookups</td><td>Performance of a contract, at your request</td></tr>
     <tr><td>Crash reporting</td><td>Legitimate interests: keeping the app working for you</td></tr>
-    <tr><td>Usage analytics</td><td><strong>Consent, and until we can ask for it properly, this is switched off</strong></td></tr>
+    <tr><td>Usage analytics</td><td><strong>Consent</strong>, asked for in the app, off by default, and withdrawable in Settings</td></tr>
     <tr><td>Subscription and entitlement</td><td>Performance of a contract</td></tr>
   </tbody>
 </table>
@@ -231,7 +235,7 @@
   <li><strong>Flights on your device</strong> stay until you delete them or uninstall the app.</li>
   <li><strong>Flights in your account</strong> stay until you delete them or ask us to delete the account. Deleting a flight marks it deleted immediately on every device; the row is then removed.</li>
   <li><strong>Cached lookup results</strong> live on your device and expire on their own.</li>
-  <li><strong>Crash reports</strong> are kept for the retention period set in Firebase, currently the service default. No analytics data is being collected to retain.</li>
+  <li><strong>Crash reports</strong> are kept for the retention period set in Firebase, currently the service default. The same applies to usage analytics, if you have allowed them; if you have not, there is nothing to retain.</li>
 </ul>
 
 <h2>Where your data is</h2>
@@ -246,9 +250,13 @@
 
 <p>If you are in the UK or the EEA, you have the right to access your data, to correct it, to have it erased, to restrict or object to processing, to data portability, and to withdraw consent where consent is the basis.</p>
 
-<p><strong>To delete your account and everything in it</strong>, email <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> from the address you signed up with, asking for deletion. We will delete your account and all flight records held against it, and confirm when it is done. We aim to act within 30 days and usually much sooner.</p>
+<p><strong>The quickest way is in the app: Settings &rsaquo; Account &rsaquo; Delete account.</strong> It asks you to type a word to confirm, offers to export your flights first, and then deletes your account and every flight record held against it straight away. There is no grace period and no recovery, which is why it asks. The flights on that device are removed at the same time, not merely unlinked.</p>
 
-<p>There is no in-app delete button yet; it is planned. Until it exists, the email above is the route, and it is the one we will honour.</p>
+<p><strong>Deleting your account does not cancel a subscription.</strong> A subscription belongs to your Apple or Google account rather than to us, so cancel it in the App Store or Google Play. For the same reason, if you sign up again later, Restore purchases will still work.</p>
+
+<p><strong>You can also ask us instead</strong>, and you do not need the app installed to do it. Email <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> from the address you signed up with, asking for deletion. We will delete your account and all flight records held against it, and confirm when it is done. We aim to act within 30 days and usually much sooner.</p>
+
+<p><strong>To take your data with you</strong>, the same in-app screen offers an export of every flight you have logged, as a file you can save or send anywhere. That is your right to portability, and you do not have to be deleting anything to use it.</p>
 
 <p>You can remove the data on your device at any time without contacting us, by deleting flights in the app or uninstalling it. Uninstalling removes local data but does not by itself delete an account.</p>
 

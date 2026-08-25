@@ -40,7 +40,7 @@
 <main class="wrap">
 
 <h1>Politique de confidentialité</h1>
-<p class="updated">Dernière mise à jour le 24 août 2026 · S’applique à FlightMap pour Android et iOS</p>
+<p class="updated">Dernière mise à jour le 25 août 2026 · S’applique à FlightMap pour Android et iOS</p>
 
 <div class="note">
   <p><strong>Cette politique décrit ce que fait réellement l’application FlightMap.</strong> Elle a été rédigée en auditant le code, et non adaptée d’un modèle ; chaque affirmation qu’elle contient doit pouvoir être vérifiée sur l’application elle-même. Si quelque chose ici ne correspond pas au comportement de l’application, c’est une erreur de ce document : <a href="mailto:support@flightmapapp.com">signalez-le-nous</a> et nous la corrigerons.</p>
@@ -55,7 +55,7 @@
   <li>L’appareil photo sert à une seule chose : lire le code-barres d’une carte d’embarquement, <strong>sur votre appareil</strong>. Aucune photo n’est prise, enregistrée ni transmise.</li>
   <li>Votre calendrier est <strong>uniquement lu</strong>, jamais modifié, et seulement si vous activez cette fonction.</li>
   <li>Nous ne vendons pas vos données, nous ne les partageons avec aucun annonceur, et l’application ne contient aucune publicité.</li>
-  <li><strong>La mesure d’audience est désactivée</strong>, et la police est intégrée à l’application : lancer FlightMap ne transmet donc rien à Google à votre sujet.</li>
+  <li><strong>La mesure d’audience reste désactivée tant que vous ne l’activez pas</strong>, et la police est intégrée à l’application : lancer FlightMap ne transmet donc rien à Google à votre sujet.</li>
 </ul>
 
 <h2>Qui est responsable de vos données</h2>
@@ -162,7 +162,11 @@
 
 <p>FlightMap utilise <strong>Google Firebase Crashlytics</strong> pour savoir quand l’application a planté. Ce service est entièrement désactivé dans les versions de développement.</p>
 
-<p><strong>La mesure d’audience est actuellement désactivée.</strong> Mesurer l’usage d’une application suppose d’inscrire un identifiant sur votre appareil, et la réglementation ePrivacy exige pour cela votre autorisation préalable, et non simplement un bon motif. Nous n’avons pas encore conçu l’écran qui vous la demande ; plutôt que de collecter par commodité juridique, nous ne collectons rien. Si cela change, la question vous sera posée, la réponse par défaut sera non, et vous pourrez en changer à tout moment dans les paramètres.</p>
+<p><strong>La mesure d’audience est désactivée tant que vous ne l’activez pas.</strong> Mesurer l’usage d’une application suppose d’inscrire un identifiant sur votre appareil, et la réglementation ePrivacy exige pour cela votre autorisation préalable, et non simplement un bon motif. FlightMap vous la demande donc. La question apparaît une seule fois, sur l’écran des réglages, sous la forme d’une carte à laquelle vous répondez dans un sens ou dans l’autre ; elle ne vous interrompt jamais et aucune fonction de l’application n’est retirée si vous refusez.</p>
+
+<p>Tant que vous n’avez pas répondu, <strong>rien n’est collecté</strong>. L’application est construite de sorte que la collecte soit désactivée avant même son démarrage, et non désactivée juste après le lancement : aucun identifiant n’est donc inscrit pendant que la question reste ouverte. Si vous refusez, elle ne vous sera plus posée. Si vous acceptez, vous pouvez revenir sur votre choix à tout moment depuis le même interrupteur, dans <strong>Réglages &rsaquo; Application &rsaquo; Statistiques d’utilisation</strong>, et la collecte s’arrête aussitôt.</p>
+
+<p>Ce qui est collecté si vous l’autorisez : les événements applicatifs automatiques de Google et un identifiant propre à l’appareil. Ce qui n’est jamais collecté, autorisation ou non : <strong>votre nom, votre adresse e-mail, ainsi que tout vol, aéroport, trajet ou référence de réservation</strong>. L’application ne définit aucun identifiant utilisateur et n’enregistre aucun événement qui lui soit propre.</p>
 
 <p>Ce que les rapports d’incident <em>n’</em>incluent <em>pas</em> importe autant que ce qu’ils incluent :</p>
 
@@ -220,7 +224,7 @@
     <tr><td>Accéder à votre appareil photo ou à votre calendrier</td><td>Consentement : l’invite d’autorisation du système, révocable à tout moment dans les réglages</td></tr>
     <tr><td>Recherches de vols et d’aéroports</td><td>Exécution du contrat, à votre demande</td></tr>
     <tr><td>Rapports d’incident</td><td>Intérêt légitime : maintenir l’application en état de fonctionner</td></tr>
-    <tr><td>Mesure d’audience</td><td><strong>Consentement, et tant que nous ne pouvons pas le recueillir correctement, elle est désactivée</strong></td></tr>
+    <tr><td>Mesure d’audience</td><td><strong>Consentement</strong>, demandé dans l’application, désactivée par défaut et révocable dans les réglages</td></tr>
     <tr><td>Abonnement et droits associés</td><td>Exécution du contrat</td></tr>
   </tbody>
 </table>
@@ -232,7 +236,7 @@
   <li>Les <strong>vols sur votre appareil</strong> sont conservés jusqu’à ce que vous les supprimiez ou désinstalliez l’application.</li>
   <li>Les <strong>vols dans votre compte</strong> sont conservés jusqu’à ce que vous les supprimiez ou demandiez la suppression du compte. Supprimer un vol le marque immédiatement comme supprimé sur tous les appareils, puis l’enregistrement est effacé.</li>
   <li>Les <strong>résultats de recherche mis en cache</strong> résident sur votre appareil et expirent d’eux-mêmes.</li>
-  <li>Les <strong>rapports d’incident</strong> sont conservés pendant la durée définie dans Firebase, actuellement la valeur par défaut du service. Aucune donnée de mesure d’audience n’est collectée, donc aucune n’est conservée.</li>
+  <li>Les <strong>rapports d’incident</strong> sont conservés pendant la durée définie dans Firebase, actuellement la valeur par défaut du service. Il en va de même pour la mesure d’audience si vous l’avez autorisée ; sinon, il n’y a rien à conserver.</li>
 </ul>
 
 <h2>Où se trouvent vos données</h2>
@@ -247,9 +251,13 @@
 
 <p>Vous disposez d’un droit d’accès à vos données, de rectification, d’effacement, de limitation, d’opposition, de portabilité, et du droit de retirer votre consentement lorsque celui-ci constitue la base du traitement.</p>
 
-<p><strong>Pour supprimer votre compte et tout ce qu’il contient</strong>, écrivez à <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> depuis l’adresse utilisée à l’inscription, en demandant la suppression. Nous supprimerons votre compte et l’ensemble des enregistrements de vol qui y sont rattachés, et vous confirmerons l’opération. Nous nous engageons à agir sous 30 jours, et le faisons généralement bien plus vite.</p>
+<p><strong>Le plus rapide se fait dans l’application : Réglages &rsaquo; Compte &rsaquo; Supprimer le compte.</strong> Un mot vous est demandé pour confirmer, l’écran vous propose d’exporter vos vols au préalable, puis votre compte et tous les enregistrements de vol qui y sont rattachés sont supprimés immédiatement. Il n’y a ni délai de rétractation ni récupération possible, d’où la confirmation. Les vols présents sur cet appareil sont supprimés en même temps, et pas seulement dissociés.</p>
 
-<p>Il n’existe pas encore de bouton de suppression dans l’application ; il est prévu. En attendant, l’adresse ci-dessus est la voie à suivre, et nous y donnerons suite.</p>
+<p><strong>Supprimer votre compte n’annule pas un abonnement.</strong> Un abonnement appartient à votre compte Apple ou Google et non au nôtre : annulez-le donc dans l’App Store ou sur Google Play. Pour la même raison, si vous créez un nouveau compte plus tard, l’option Restaurer les achats fonctionnera toujours.</p>
+
+<p><strong>Vous pouvez aussi nous le demander</strong>, sans avoir besoin de l’application. Écrivez à <a href="mailto:support@flightmapapp.com">support@flightmapapp.com</a> depuis l’adresse utilisée à l’inscription, en demandant la suppression. Nous supprimerons votre compte et l’ensemble des enregistrements de vol qui y sont rattachés, et vous confirmerons l’opération. Nous nous engageons à agir sous 30 jours, et le faisons généralement bien plus vite.</p>
+
+<p><strong>Pour emporter vos données</strong>, le même écran propose d’exporter tous les vols que vous avez enregistrés, dans un fichier que vous pouvez conserver ou envoyer où vous voulez. C’est votre droit à la portabilité, et vous n’avez rien à supprimer pour en user.</p>
 
 <p>Vous pouvez supprimer les données présentes sur votre appareil à tout moment sans nous contacter, en effaçant des vols dans l’application ou en la désinstallant. La désinstallation supprime les données locales mais ne supprime pas le compte.</p>
 
