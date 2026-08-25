@@ -14,11 +14,17 @@ token: it is static HTML that Cloudflare Pages serves as-is.
 
 | Path | |
 |---|---|
-| `/` | Landing page — links to the documents and to support |
+| `/`, `/fr`, `/ar` | Landing page, three languages. Links to the documents and to support |
 | `/privacy`, `/privacy/fr`, `/privacy/ar` | Privacy policy, three languages |
 | `/terms`, `/terms/fr`, `/terms/ar` | Terms of service, three languages |
+| `/confirmed` | Where Supabase sends a user after they click their email confirmation link. Deliberately **one** page carrying all three languages, because the redirect cannot know which one the user reads |
 | `assets/` | Stylesheet and the brand mark |
 | `_headers` | Cloudflare Pages security headers |
+
+Every path answers **308 to a trailing slash** (`/privacy` becomes `/privacy/`).
+That is Cloudflare Pages serving directory indexes. The `canonical` tags use the
+slash-less form and search engines resolve it through the redirect, so give the
+stores the slash-less URLs.
 
 **English is the source of truth.** The French and Arabic pages say so, and all
 three are edited together — a change to the English text that does not reach the
